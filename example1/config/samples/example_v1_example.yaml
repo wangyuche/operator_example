@@ -1,0 +1,14 @@
+apiVersion: example.example/v1
+kind: Example
+metadata:
+  labels:
+    app.kubernetes.io/name: example
+    app.kubernetes.io/instance: example-sample
+    app.kubernetes.io/part-of: example1
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: example1
+  name: example-sample
+  namespace: default
+spec:
+  images: "postgres:13.10"
+  password: "12345"
