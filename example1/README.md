@@ -66,7 +66,7 @@ spec:
         - name: POSTGRES_PASSWORD
           value: "sdffhgn"
         volumeMounts:
-        - mountPath: /var/lib/postgresql/data
+        - mountPath: /var/lib/postgresql
           name: postgresql-data
       terminationGracePeriodSeconds: 60
       volumes:

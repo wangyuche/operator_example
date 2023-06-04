@@ -93,7 +93,7 @@ func (r *ExampleReconciler) stspg_standalone(m *examplev1.Example) *appsv1.State
 							VolumeMounts: []corev1.VolumeMount{
 								{
 									Name:      "postgresql-data",
-									MountPath: "/var/lib/postgresql/data",
+									MountPath: "/var/lib/postgresql",
 								},
 							},
 						},
